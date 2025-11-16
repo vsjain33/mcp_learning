@@ -40,6 +40,7 @@ async def create_graph(session):
         MessagesPlaceholder("messages")
     ])
 
+
     chat_llm = prompt_template | llm_with_tools
 
     # Define chat node
